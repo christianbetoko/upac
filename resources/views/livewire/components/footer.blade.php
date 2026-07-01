@@ -54,9 +54,9 @@
                                     <h5 class="rs-footer-widget-title">Notre Université​</h5>
                                     <div class="rs-footer-widget-link has-theme-red">
                                         <ul>
-                                            <li><a href="about.html">A propos</a></li>
-                                            <li><a href="alumni.html">Programmes</a></li>
-                                            <li><a href="libraries.html">Contact</a></li>
+                                            <li><a href="{{route('home')}}">Accueil</a></li>
+                                           
+                                            <li><a href="#">Contact</a></li>
                                             
                                         </ul>
                                     </div>
@@ -65,8 +65,8 @@
                                     <h5 class="rs-footer-widget-title">Liens utiles</h5>
                                     <div class="rs-footer-widget-link has-theme-red">
                                         <ul>
-                                            <li><a href="faculty.html">Annuaires</a></li>
-                                            <li><a href="program.html">Registre des laureats</a></li>
+                                            <li><a href="#">Annuaires</a></li>
+                                            <li><a href="#">Registre des laureats</a></li>
                                             
                                         </ul>
                                     </div>
