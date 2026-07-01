@@ -35,11 +35,9 @@
                     </div>
                     <div class="header-top-right">
                         <div class="header-top-menu-wrapper">
+                            
                             <div class="header-nav-menu-item">
-                                <a href="campus-life.html">Annuaires</a>
-                            </div>
-                            <div class="header-nav-menu-item">
-                                <a href="research.html">Registre des lauréats</a>
+                                <a href="research.html">Contact</a>
                             </div>
  <div class="header-nav-menu-item">
                                 <button class="btn btn-primary">Se connecter</button>
@@ -191,9 +189,7 @@
         <li><a href="#">Retour en images (Médias)</a></li>
                                         </ul>
                                     </li>
-                                    <li>
-                                        <a href="#">Contact</a>
-                                    </li>
+                                    
                                 </ul>
                             </nav>
                         </div>
@@ -412,9 +408,7 @@
         <li><a href="#">Retour en images (Médias)</a></li>
                                         </ul>
                                     </li>
-                                    <li>
-                                        <a href="#">Contact</a>
-                                    </li>
+                                   
                                 </ul>
                             </nav>
                         </div>
