@@ -52,7 +52,7 @@
                     <div class="header-left">
                         <div class="header-logo-wrapper">
                             <div class="header-logo">
-                                <a href="index.html"><img height="50" src="{{ asset('assets/images/logo.png') }}" alt="logo"></a>
+                                <a href="index.html"><img height="50" src="{{ asset('storage/'.$enterprise->logo_without_bg) }}" alt="{{ $enterprise->name }}"></a>
                             </div>
                         </div>
                         <div class="header-menu">
@@ -209,7 +209,7 @@
                                 </div>
                                 <form class="header-search-inner rs-stickys-form" action="#">
                                     <div class="header-search">
-                                        <input type="text" placeholder="Searching...">
+                                        <input type="text" placeholder="Recherche...">
                                         <button type="submit"><i class="ri-search-line"></i></button>
                                     </div>
                                 </form>
@@ -271,8 +271,8 @@
                     <div class="header-left">
                         <div class="header-logo-wrapper">
                             <div class="header-logo">
-                                <a class="logo-white" href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
-                                <a class="logo-red" href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+                                <a class="logo-white" href="{{route('home')}}"><img src="{{ asset('storage/'.$enterprise->logo_without_bg) }}" alt="{{ $enterprise->name }}"></a>
+                                <a class="logo-red" href="{{route('home')}}"><img src="{{ asset('storage/'.$enterprise->logo_without_bg) }}" alt="{{ $enterprise->name }}"></a>
                                
                             </div>
                         </div>
