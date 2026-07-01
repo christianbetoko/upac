@@ -194,7 +194,7 @@
         </section>
         <!-- campus life area end -->
           <!-- blog area start -->
-        <section class="rs-blog-area section-space rs-blog-one has-bg-primary">
+       {{--  <section class="rs-blog-area section-space rs-blog-one has-bg-primary">
             <div class="container">
                 <div class="row align-items-center g-5 section-title-space">
                     <div class="col-xl-7 col-lg-7">
@@ -363,10 +363,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!-- blog area end -->
  <!-- event area start -->
-        <section class="rs-event-area section-space rs-event-two rs-swiper">
+       {{--  <section class="rs-event-area section-space rs-event-two rs-swiper">
             <div class="container">
                 <div class="row align-items-center g-5 section-title-space">
                     <div class="col-xl-7 col-lg-7">
@@ -535,7 +535,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!-- event area end -->
        
     </main>

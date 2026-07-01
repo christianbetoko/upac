@@ -68,8 +68,8 @@
                                             <li class="rs-menu-item">
                                                 <a href="#" class="title">Qui sommes nous?</a>
                                                 <ul>
-                                                    <li><a href="about.html">A propos</a></li>
-                                                    <li><a href="history.html">Historique</a></li>
+                                                    <li><a href="#">A propos</a></li>
+                                                    <li><a href="#">Historique</a></li>
                                                     
 
                                                 </ul>
@@ -77,8 +77,8 @@
                                             <li class="rs-menu-item">
                                                 <a href="#" class="title">Organisation</a>
                                                 <ul>
-                                                    <li><a href="research.html">Organisation administrative</a></li>
-                                                    <li><a href="research-details.html">Stratégies pédagogiques</a></li>
+                                                    <li><a href="#">Organisation administrative</a></li>
+                                                    <li><a href="#">Stratégies pédagogiques</a></li>
                                                     
                                                     
                                                 </ul>
@@ -86,10 +86,10 @@
                                             <li class="rs-menu-item">
                                                 <a href="#" class="title">Gouvernance</a>
                                                 <ul>
-                                                    <li><a href="research.html">La présidence</a></li>
-                                                    <li><a href="research-details.html">Le Rectorat</a></li>
-                                                    <li><a href="research-details.html">Le Secrétariat Général</a></li>
-                                                    <li><a href="research-details.html">Les Services Académiques</a></li>
+                                                    <li><a href="#">La présidence</a></li>
+                                                    <li><a href="#">Le Rectorat</a></li>
+                                                    <li><a href="#">Le Secrétariat Général</a></li>
+                                                    <li><a href="#">Les Services Académiques</a></li>
                                                     
                                                 </ul>
                                             </li>
@@ -102,8 +102,8 @@
                                             <li class="rs-menu-item">
                                                 <a href="#" class="title">Faculté des Sciences et Technologies</a>
                                                 <ul>
-                                                    <li><a href="about.html">Département de Génie Informatique</a></li>
-                                                    <li><a href="history.html">Département de Génie Civil & Architecture</a></li>
+                                                    <li><a href="#">Département de Génie Informatique</a></li>
+                                                    <li><a href="#">Département de Génie Civil & Architecture</a></li>
                                                     
 
                                                 </ul>
@@ -111,8 +111,8 @@
                                             <li class="rs-menu-item">
                                                 <a href="#" class="title">Faculté des Sciences Humaines</a>
                                                 <ul>
-                                                    <li><a href="research.html">Département de Droit</a></li>
-                                                    <li><a href="research-details.html">Département d'Économie & Gestion</a></li>
+                                                    <li><a href="#">Département de Droit</a></li>
+                                                    <li><a href="#">Département d'Économie & Gestion</a></li>
                                                     
                                                     
                                                 </ul>
@@ -120,9 +120,9 @@
                                             <li class="rs-menu-item">
                                                 <a href="#" class="title">Faculté des Sciences de la Santé</a>
                                                 <ul>
-                                                    <li><a href="research.html">Sciences Infirmières </a></li>
-                                                    <li><a href="research.html">Technique de Laboratoire de Prothèse Dentaire </a></li>
-                                                    <li><a href="research.html">Santé Communautaire </a></li>
+                                                    <li><a href="#">Sciences Infirmières </a></li>
+                                                    <li><a href="#">Technique de Laboratoire de Prothèse Dentaire </a></li>
+                                                    <li><a href="#">Santé Communautaire </a></li>
                                                    
                                                     
                                                 </ul>
@@ -142,10 +142,10 @@
                                         <ul class="submenu last-children">
                                            
        
-        <li><a href="galerie.html">Séminaires & Ateliers</a></li>
-        <li><a href="certifications.html">Certifications Internationales (AWS, Cisco, etc.)</a></li>
-        <li><a href="formations-professionnelles.html">Formations Professionnelles Courtes</a></li>
-        <li><a href="cours-langues.html">Cours de Langues</a></li>
+        <li><a href="#">Séminaires & Ateliers</a></li>
+        <li><a href="#">Certifications Internationales (AWS, Cisco, etc.)</a></li>
+        <li><a href="#">Formations Professionnelles Courtes</a></li>
+        <li><a href="#">Cours de Langues</a></li>
 
 
                                         </ul>
@@ -156,10 +156,10 @@
                                             <li class="rs-menu-item">
                                                 <a href="#" class="title">Vie Etudiante</a>
                                                 <ul>
-                                                   <li><a href="associations.html">Associations</a></li>
+                                                   <li><a href="#">Associations</a></li>
                 
-                                                   <li><a href="evenements.html">Événements</a></li>
-                <li><a href="logement.html">Logement</a></li>
+                                                   <li><a href="#">Événements</a></li>
+                <li><a href="#">Logement</a></li>
                                                     
 
                                                 </ul>
@@ -167,9 +167,9 @@
                                             <li class="rs-menu-item">
                                                 <a href="#" class="title">Ressources et outils</a>
                                                 <ul>
-                                                    <li><a href="bibliotheque.html">Bibliothèque (BU)</a></li>
-                <li><a href="salle-informatique.html">Salles Informatiques</a></li>
-                <li><a href="restauration.html">Restaurant Universitaire</a></li>
+                                                    <li><a href="#">Bibliothèque (BU)</a></li>
+                <li><a href="#">Salles Informatiques</a></li>
+                <li><a href="#">Restaurant Universitaire</a></li>
                                                     
                                                     
                                                 </ul>
@@ -186,13 +186,13 @@
                                         <a href="javascript:void(0)">Actualités</a>
                                         <ul class="submenu last-children">
                                             <li><a href="toutes-les-actualites.html">À la une (Toutes les infos)</a></li>
-        <li><a href="communiques.html">Communiqués Officiels</a></li>
-        <li><a href="agenda.html">Agenda & Événements</a></li>
-        <li><a href="galerie.html">Retour en images (Médias)</a></li>
+        <li><a href="#">Communiqués Officiels</a></li>
+        <li><a href="#">Agenda & Événements</a></li>
+        <li><a href="#">Retour en images (Médias)</a></li>
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="contact.html">Contact</a>
+                                        <a href="#">Contact</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -290,8 +290,8 @@
                                             <li class="rs-menu-item">
                                                 <a href="#" class="title">Qui sommes nous?</a>
                                                 <ul>
-                                                    <li><a href="about.html">A propos</a></li>
-                                                    <li><a href="history.html">Historique</a></li>
+                                                    <li><a href="#">A propos</a></li>
+                                                    <li><a href="#">Historique</a></li>
                                                     
 
                                                 </ul>
@@ -299,8 +299,8 @@
                                             <li class="rs-menu-item">
                                                 <a href="#" class="title">Organisation</a>
                                                 <ul>
-                                                    <li><a href="research.html">Organisation administrative</a></li>
-                                                    <li><a href="research-details.html">Stratégies pédagogiques</a></li>
+                                                    <li><a href="#">Organisation administrative</a></li>
+                                                    <li><a href="#">Stratégies pédagogiques</a></li>
                                                     
                                                     
                                                 </ul>
@@ -308,10 +308,10 @@
                                             <li class="rs-menu-item">
                                                 <a href="#" class="title">Gouvernance</a>
                                                 <ul>
-                                                    <li><a href="research.html">La présidence</a></li>
-                                                    <li><a href="research-details.html">Le Rectorat</a></li>
-                                                    <li><a href="research-details.html">Le Secrétariat Général</a></li>
-                                                    <li><a href="research-details.html">Les Services Académiques</a></li>
+                                                    <li><a href="#">La présidence</a></li>
+                                                    <li><a href="#">Le Rectorat</a></li>
+                                                    <li><a href="#">Le Secrétariat Général</a></li>
+                                                    <li><a href="#">Les Services Académiques</a></li>
                                                     
                                                 </ul>
                                             </li>
@@ -324,8 +324,8 @@
                                             <li class="rs-menu-item">
                                                 <a href="#" class="title">Faculté des Sciences et Technologies</a>
                                                 <ul>
-                                                    <li><a href="about.html">Département de Génie Informatique</a></li>
-                                                    <li><a href="history.html">Département de Génie Civil & Architecture</a></li>
+                                                    <li><a href="#">Département de Génie Informatique</a></li>
+                                                    <li><a href="#">Département de Génie Civil & Architecture</a></li>
                                                     
 
                                                 </ul>
@@ -333,8 +333,8 @@
                                             <li class="rs-menu-item">
                                                 <a href="#" class="title">Faculté des Sciences Humaines</a>
                                                 <ul>
-                                                    <li><a href="research.html">Département de Droit</a></li>
-                                                    <li><a href="research-details.html">Département d'Économie & Gestion</a></li>
+                                                    <li><a href="#">Département de Droit</a></li>
+                                                    <li><a href="#">Département d'Économie & Gestion</a></li>
                                                     
                                                     
                                                 </ul>
@@ -342,9 +342,9 @@
                                             <li class="rs-menu-item">
                                                 <a href="#" class="title">Faculté des Sciences de la Santé</a>
                                                 <ul>
-                                                    <li><a href="research.html">Sciences Infirmières </a></li>
-                                                    <li><a href="research.html">Technique de Laboratoire de Prothèse Dentaire </a></li>
-                                                    <li><a href="research.html">Santé Communautaire </a></li>
+                                                    <li><a href="#">Sciences Infirmières </a></li>
+                                                    <li><a href="#">Technique de Laboratoire de Prothèse Dentaire </a></li>
+                                                    <li><a href="#">Santé Communautaire </a></li>
                                                    
                                                     
                                                 </ul>
@@ -364,10 +364,10 @@
                                         <ul class="submenu last-children">
                                            
        
-        <li><a href="galerie.html">Séminaires & Ateliers</a></li>
-        <li><a href="certifications.html">Certifications Internationales</a></li>
-        <li><a href="formations-professionnelles.html">Formations Professionnelles Courtes</a></li>
-        <li><a href="cours-langues.html">Cours de Langues</a></li>
+        <li><a href="#">Séminaires & Ateliers</a></li>
+        <li><a href="#">Certifications Internationales</a></li>
+        <li><a href="#">Formations Professionnelles Courtes</a></li>
+        <li><a href="#">Cours de Langues</a></li>
 
 
                                         </ul>
@@ -378,9 +378,9 @@
                                             <li class="rs-menu-item">
                                                 <a href="#" class="title">Vie Etudiante</a>
                                                 <ul>
-                                                   <li><a href="associations.html">Associations</a></li>
-                <li><a href="evenements.html">Événements</a></li>
-                <li><a href="logement.html">Logement</a></li>
+                                                   <li><a href="#">Associations</a></li>
+                <li><a href="#">Événements</a></li>
+                <li><a href="#">Logement</a></li>
                                                     
 
                                                 </ul>
@@ -388,9 +388,9 @@
                                             <li class="rs-menu-item">
                                                 <a href="#" class="title">Ressources et outils</a>
                                                 <ul>
-                                                    <li><a href="bibliotheque.html">Bibliothèque (BU)</a></li>
-                <li><a href="salle-informatique.html">Salles Informatiques</a></li>
-                <li><a href="restauration.html">Restaurant Universitaire</a></li>
+                                                    <li><a href="#">Bibliothèque (BU)</a></li>
+                <li><a href="#">Salles Informatiques</a></li>
+                <li><a href="#">Restaurant Universitaire</a></li>
                                                     
                                                     
                                                 </ul>
@@ -406,14 +406,14 @@
                                      <li class="menu-item-has-children">
                                         <a href="javascript:void(0)">Actualités</a>
                                         <ul class="submenu last-children">
-                                            <li><a href="toutes-les-actualites.html">À la une (Toutes les infos)</a></li>
-        <li><a href="communiques.html">Communiqués Officiels</a></li>
-        <li><a href="agenda.html">Agenda & Événements</a></li>
-        <li><a href="galerie.html">Retour en images (Médias)</a></li>
+                                            <li><a href="#">À la une (Toutes les infos)</a></li>
+        <li><a href="#">Communiqués Officiels</a></li>
+        <li><a href="#">Agenda & Événements</a></li>
+        <li><a href="#">Retour en images (Médias)</a></li>
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="contact.html">Contact</a>
+                                        <a href="#">Contact</a>
                                     </li>
                                 </ul>
                             </nav>
