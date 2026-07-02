@@ -9,7 +9,7 @@ class Post extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'user_id','subcategory_id', 'title', 'slug',  'content','file_path', 'image_cover', 'status', 'is_featured', 'published_at'
+        'user_id','sub_category_id', 'title', 'slug',  'content','file_path', 'image_cover', 'status', 'is_featured', 'published_at'
     ];
 
     protected $casts = ['published_at' => 'datetime', 'status' => 'boolean', 'is_featured' => 'boolean'];

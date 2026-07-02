@@ -28,6 +28,16 @@
     <link rel="stylesheet" href="{{asset('assets/css/vendor/spacing.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/vendor/remixicon.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/main.css')}}">
+	@if(View::hasSection('meta_tags'))
+        @yield('meta_tags')
+    @else
+        {{-- Valeurs par défaut (ex: Accueil) --}}
+        <meta property="og:title" content="U.PA.C - Université Panafricaine du Congo">
+        <meta property="og:description" content="Bienvenue sur le site officiel de l'Université Panafricaine du Congo (U.PA.C). Découvrez nos programmes académiques, nos actualités et nos événements.">
+        <meta property="og:image" content="{{asset('assets/images/logo.png')}}">
+        <meta name="twitter:image" content="{{asset('assets/images/logo.png')}}">
+    @endif
+
     </head>
     <body class="rs-smoother-yes">
          <!-- preloader start -->

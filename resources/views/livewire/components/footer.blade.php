@@ -13,7 +13,15 @@
                                     <a href="{{route('home')}}"><img height="100" src="{{asset('storage/'. $enterprise->logo_without_bg)}}" alt="{{ $enterprise->name }}"></a>
                                 </div>
                                 <div class="rs-footer-widget-content">
+                                     <div>
+                                        <div class="rs-footer-content-item">
+                                            <span></span>
+                                            <a href="">{{ $enterprise->address }}</a>
+                                        </div>
+                                        
+                                    </div>
                                     <div class="rs-footer-widget-contact-info">
+                                        
                                         <div class="rs-footer-content-item">
                                             <span>Téléphone:</span>
                                             <a href="tel:{{ $enterprise->phone }}">{{ $enterprise->phone }}</a>
@@ -36,7 +44,7 @@
                                         <div class="rs-footer-social theme-social has-radius-none has-medium has-theme-red">
 @if($socials->isNotEmpty())
 @foreach($socials as $social)
-                                            <a href="{{ $social->link }}" target="_blank">
+                                            <a href="{{ $social->url }}" target="_blank">
 
                                                 <i class="{{ $social->icon }}"></i>
                                             </a>
