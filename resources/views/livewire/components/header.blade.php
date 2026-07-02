@@ -50,7 +50,7 @@
                     <div class="header-left">
                         <div class="header-logo-wrapper">
                             <div class="header-logo">
-                                <a href="index.html"><img height="50" src="{{ asset('storage/'.$enterprise->logo_without_bg) }}" alt="{{ $enterprise->name }}"></a>
+                                <a href="{{route('home')}}"><img height="50" src="{{ asset('storage/'.$enterprise->logo_without_bg) }}" alt="{{ $enterprise->name }}"></a>
                             </div>
                         </div>
                         <div class="header-menu">
