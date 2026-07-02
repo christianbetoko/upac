@@ -113,7 +113,7 @@
                                         <div class="rs-footer-copyright-item">
                                             <div class="rs-footer-copyright has-theme-red">
                                                 <p class="underline">Copyright © <span id="year">2026</span> Université Panafricaine du Congo.
-                                                    {{-- propulsé par <a target="_blank" href="https://christianbetoko.com">CB Dev.</a> --}} </p>
+                                                    Propulsé par <a target="_blank" href="https://christianbetoko.com">CB Dev</a>  </p>
                                             </div>
                                         </div>
                                     </div>
