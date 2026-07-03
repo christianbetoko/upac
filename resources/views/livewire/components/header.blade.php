@@ -185,7 +185,7 @@
                                      <li class="menu-item-has-children">
                                         <a href="javascript:void(0)">Actualités</a>
                                         <ul class="submenu last-children">
-                                            <li><a href="toutes-les-actualites.html">À la une (Toutes les infos)</a></li>
+                                            <li class="{{ request()->routeIs('blog') ? 'active' : '' }}"><a href="{{ route('blog') }}">À la une (Toutes les infos)</a></li>
         <li><a href="#">Communiqués Officiels</a></li>
         <li><a href="#">Agenda & Événements</a></li>
         <li><a href="#">Retour en images (Médias)</a></li>
@@ -404,7 +404,7 @@
                                      <li class="menu-item-has-children">
                                         <a href="javascript:void(0)">Actualités</a>
                                         <ul class="submenu last-children">
-                                            <li><a href="#">À la une (Toutes les infos)</a></li>
+                                             <li class="{{ request()->routeIs('blog') ? 'active' : '' }}"><a href="{{ route('blog') }}">À la une (Toutes les infos)</a></li>
         <li><a href="#">Communiqués Officiels</a></li>
         <li><a href="#">Agenda & Événements</a></li>
         <li><a href="#">Retour en images (Médias)</a></li>

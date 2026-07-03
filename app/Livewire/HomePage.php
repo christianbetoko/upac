@@ -7,6 +7,7 @@ use Livewire\Attributes\Title;
 use App\Models\Slide;
 use App\Models\CampusLifePhoto;
 use App\Models\Post;
+use Livewire\WithPagination;
 use Carbon\Carbon;
 #[Title('Accueil - U.PA.C')]
 class HomePage extends Component

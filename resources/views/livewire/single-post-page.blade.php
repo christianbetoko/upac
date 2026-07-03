@@ -43,8 +43,11 @@
                                  </span>
                                         </li>
                                         <li class="rs-breadcumb-item">
-                                            Actualités
+                                            <a href="{{route('blog')}}">
+                                                Blog
+                                            </a>
                                         </li>
+                                            
                                     </ul>
                                 </nav>
                             </div>
