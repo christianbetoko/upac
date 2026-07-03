@@ -35,9 +35,11 @@
                     </div>
                     <div class="header-top-right">
                         <div class="header-top-menu-wrapper">
-                            
                             <div class="header-nav-menu-item">
-                                <a href="research.html">Contact</a>
+                                <a href="#">Foire aux questions</a>
+                            </div>
+                            <div class="header-nav-menu-item">
+                                <a href="#">Contact</a>
                             </div>
  <div class="header-nav-menu-item">
                                 <button class="btn btn-primary">Se connecter</button>
