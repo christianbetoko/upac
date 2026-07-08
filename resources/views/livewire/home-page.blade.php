@@ -136,7 +136,7 @@
                                 
                             </div>
                             <div class="rs-feature-item">
-                                <a href="admission-requirements.html">
+                                <a href="{{ route('admission') }}" >
                                     Admission et inscription
                                 </a>
                             </div>

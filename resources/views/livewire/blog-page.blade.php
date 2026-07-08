@@ -5,8 +5,8 @@
         <section class="rs-breadcrumb-area rs-breadcrumb-one p-relative section-space" wire:ignore>
             <div class="rs-breadcrumb-bg-thumb include-bg" data-background="{{asset('assets/upacvue.jpg')}}">
             </div>
-            <div class="rs-breadcrumb-shape">
-                <img src="{{asset('assets/image_covers/shape/arrow-shape-two.webp')}}" alt="image_cover">
+             <div class="rs-breadcrumb-shape">
+                <img src="{{asset('assets/images/shape/arrow-shape-two.webp')}}" alt="image">
             </div>
             <div class="container-fluid g-0">
                 <div class="row">
