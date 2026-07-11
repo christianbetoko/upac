@@ -181,7 +181,7 @@ class AdmissionPage extends Component
 
         // 4. Notification Flash de succès
         // Reset the form after sending the message
-        LivewireAlert::title('Message envoyé avec succès!')
+        LivewireAlert::title('Votre dossier d\'admission a été enregistré avec succès !')
         ->success()
         ->show();
        // session()->flash('success', 'Votre dossier d\'admission complet a été enregistré avec succès !');
