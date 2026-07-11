@@ -7,7 +7,7 @@
 
     {{--     @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
 
-        @livewireStyles
+        
         <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="template-version" content="1.0.1">
@@ -37,7 +37,7 @@
         <meta property="og:image" content="{{asset('assets/images/logo.png')}}">
         <meta name="twitter:image" content="{{asset('assets/images/logo.png')}}">
     @endif
-
+@livewireStyles
     </head>
     <body class="rs-smoother-yes">
          <!-- preloader start -->
@@ -80,7 +80,7 @@
     <script src="{{asset('assets/js/vendor/isotope.pkgd.min.js')}}"></script>
     <script src="{{asset('assets/js/vendor/imagesloaded.pkgd.min.js')}}"></script>
     <script src="{{asset('assets/js/vendor/ajax-form.js')}}"></script>
-    <script src="{{asset('assets/css/main.css')}}"></script>
+    <script src="{{asset('assets/js/plugins/lenis.min.js')}}"></script>
     <script src="{{asset('assets/js/plugins/gsap.min.js')}}"></script>
     <script src="{{asset('assets/js/plugins/rs-anim-int.js')}}"></script>
     <script src="{{asset('assets/js/plugins/rs-scroll-trigger.min.js')}}"></script>
@@ -92,7 +92,7 @@
     <script src="{{asset('assets/js/vendor/odometer.min.js')}}"></script>
     <script src="{{asset('assets/js/main.js')}}"></script>
 
-    
-        @livewireScripts
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    @livewireScripts
     </body>
 </html>
