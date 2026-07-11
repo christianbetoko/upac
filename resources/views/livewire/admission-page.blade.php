@@ -411,8 +411,8 @@
 
     <div class="rs-contact-btn">
         <button type="submit" wire:loading.attr="disabled" class="rs-btn hover-yellow radius-6 w-100">
-            <span wire:loading.remove wire:target="submitForm">Soumettre ma candidature</span>
-            <span wire:loading wire:target="submitForm">Traitement en cours...</span>
+            <span wire:loading.remove wire:target="envoyer">Soumettre ma candidature</span>
+            <span wire:loading wire:target="envoyer">Traitement en cours...</span>
         </button>
     </div>
 </form>
