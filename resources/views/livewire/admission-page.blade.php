@@ -258,7 +258,7 @@
         <label for="school_file">Attestation ou Diplôme d'État (Fichier PDF/Image)</label>
         <input type="file" id="school_file" wire:model="school_file" class="file-input">
         
-        <div wire:loading wire:target="diploma_file" class="text-info small mt-1">
+        <div wire:loading wire:target="school_file" class="text-info small mt-1">
             Téléchargement du fichier en cours...
         </div>
         @error('school_file') <span class="text-danger small d-block">{{ $message }}</span> @enderror
