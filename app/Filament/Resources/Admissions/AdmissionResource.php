@@ -184,7 +184,12 @@ class AdmissionResource extends Resource
                 Tables\Columns\TextColumn::make('last_name')
                     ->label('Nom')
                     ->searchable(),
-
+Tables\Columns\TextColumn::make('phone')
+                    ->label('Téléphone')
+                    ,
+                    Tables\Columns\TextColumn::make('email')
+                    ->label('Email')
+                    ,
                 Tables\Columns\TextColumn::make('department.name')
                     ->label('Département')
                     ->sortable(),
