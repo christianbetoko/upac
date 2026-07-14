@@ -164,7 +164,7 @@ class AdmissionPage extends Component
         return;
     }
         // 3. Création de l'enregistrement en base de données
-        Admission::create([
+      $admission=  Admission::create([
             // Perso
             'code'                  => generateRandomCodeWithUPAC(10),
             'first_name'            => $this->first_name,
