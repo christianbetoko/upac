@@ -33,6 +33,10 @@ class Admission extends Model
         'university_file',
         'department_id',
         'level_id',
+        'national_id',
+        'birth_certificate',
+        'good_conduct_certificate',
+
         'status'
     ];
 

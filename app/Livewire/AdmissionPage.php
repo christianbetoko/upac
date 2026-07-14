@@ -88,6 +88,16 @@ class AdmissionPage extends Component
     public $selected_level;
 
 
+
+    #[Validate('nullable|file|mimes:pdf,jpg,jpeg,png|max:10240')]
+    public $national_id;
+
+    #[Validate('nullable|file|mimes:pdf,jpg,jpeg,png|max:10240')]
+    public $birth_certificate;
+
+    #[Validate('nullable|file|mimes:pdf,jpg,jpeg,png|max:10240')]
+    public $good_conduct_certificate;
+
     #[Computed()]
     public function departments(){
         return Department::where('status', true)->get();
@@ -134,6 +144,16 @@ class AdmissionPage extends Component
         
         // Fichier université antérieure (optionnel)
         $universityFilePath = $this->university_file ? $this->university_file->store('admissions/documents_universitaires', 'public') : null;
+
+        // Fichier pièce d'identité (optionnel)
+        $nationalIdPath = $this->national_id ? $this->national_id->store('admissions/documents_personnels', 'public') : null;
+        
+        // Fichier certificat de naissance (optionnel)
+        $birthCertificatePath = $this->birth_certificate ? $this->birth_certificate->store('admissions/documents_personnels', 'public') : null;
+        
+        // Fichier certificat de bonne conduite (optionnel)
+        $goodConductCertificatePath = $this->good_conduct_certificate ? $this->good_conduct_certificate->store('admissions/documents_personnels', 'public') : null;
+
 // --- PARSAGE ET REFORMATAGE DE LA DATE POUR MYSQL ---
     try {
         // Convertit 'November 4, 1990' en '1990-11-04'
@@ -174,9 +194,15 @@ class AdmissionPage extends Component
             // Choix Académiques U.PA.C
             'department_id'         => $this->selected_program,
             'level_id'              => $this->selected_level,
-            
+            // Documents personnels
+            'national_id'           => $nationalIdPath,
+            'birth_certificate'     => $birthCertificatePath,
+            'good_conduct_certificate' => $goodConductCertificatePath,
             // Suivi
             'status'                => 'pending',
+
+            // Autres documents
+
         ]);
 
         // 4. Notification Flash de succès
@@ -191,7 +217,8 @@ class AdmissionPage extends Component
             'photo', 'first_name', 'last_name', 'middle_name', 'gender', 'email', 'phone', 'birth_date',
             'school_name', 'school_option', 'school_grad_year', 'school_percentage', 'school_file',
             'university_name', 'university_option', 'university_grad_year', 'university_mention', 'university_percentage', 'university_file',
-            'selected_program', 'selected_level'
+            'selected_program', 'selected_level',
+            'national_id', 'birth_certificate', 'good_conduct_certificate'
         ]);
     }
 

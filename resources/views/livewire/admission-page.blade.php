@@ -404,8 +404,41 @@
     </div>
 </div>
 
+     <h5 class="form-title rs-split-text-enable split-in-left mt-20 mb-20">
+       Autres documents 
+    </h5>
+     <div class="row">
+   
+        
+        <div class="form-group mb-30">
+        <label for="national_id">Pièce d'identité / Passeport (Fichier PDF/Image)</label>
+        <input type="file" id="national_id" wire:model="national_id" class="file-input">
+        
+        <div wire:loading wire:target="national_id" class="text-info small mt-1">
+            Téléchargement du fichier en cours...
+        </div>
+        @error('national_id') <span class="text-danger small d-block">{{ $message }}</span> @enderror
+    </div>
+<div class="form-group mb-30">
+        <label for="birth_certificate">Certificat de naissance (Fichier PDF/Image)</label>
+        <input type="file" id="birth_certificate" wire:model="birth_certificate" class="file-input">
+        
+        <div wire:loading wire:target="birth_certificate" class="text-info small mt-1">
+            Téléchargement du fichier en cours...
+        </div>
+        @error('birth_certificate') <span class="text-danger small d-block">{{ $message }}</span> @enderror
+    </div>
     
-    
+    <div class="form-group mb-30">
+        <label for="good_conduct_certificate">Certificat de bonne conduite, vie et mœurs (Fichier PDF/Image)</label>
+        <input type="file" id="good_conduct_certificate" wire:model="good_conduct_certificate" class="file-input">
+        
+        <div wire:loading wire:target="good_conduct_certificate" class="text-info small mt-1">
+            Téléchargement du fichier en cours...
+        </div>
+        @error('good_conduct_certificate') <span class="text-danger small d-block">{{ $message }}</span> @enderror
+    </div>
+     </div>
     
     
 
