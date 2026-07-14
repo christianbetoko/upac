@@ -204,7 +204,13 @@ class AdmissionPage extends Component
             // Autres documents
 
         ]);
-
+// --- ENVOI DE L'EMAIL AVEC LA CARTE PDF EN PIÈCE JOINTE ---
+        try {
+            \Illuminate\Support\Facades\Mail::to($admission->email)->send(new \App\Mail\AdmissionConfirmationMail($admission));
+        } catch (\Exception $e) {
+            // Optionnel : Tu peux logger l'erreur si la configuration SMTP échoue temporairement
+            \Log::error("Échec d'envoi de l'email d'admission : " . $e->getMessage());
+        }
         // 4. Notification Flash de succès
         // Reset the form after sending the message
         LivewireAlert::title('Votre dossier d\'admission a été enregistré avec succès !')
