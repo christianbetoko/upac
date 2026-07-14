@@ -1,5 +1,5 @@
  <!-- Body main wrapper start -->
-    @section('title', $post->title . ' | Digital Akili')
+    @section('title', $post->title . ' | Université Panafricaine du Congo')
 
 @section('meta_tags')
     <meta property="og:title" content="{{ $post->title }}">
