@@ -69,7 +69,7 @@
     
    
      <h5 class="form-title rs-split-text-enable split-in-left mb-20">
-                                    Information personnelle
+                                    Informations personnelles
                                 </h5>
     <div class="row justify-content-center mb-4">
     <div class="col-md-6 text-center">
