@@ -74,7 +74,7 @@
     <div class="row justify-content-center mb-4">
     <div class="col-md-6 text-center">
         <label class="form-label fw-semibold text-dark d-block mb-3" style="font-size: 15px;">
-            Photo d'identité / Profil <span class="text-danger">*</span>
+            Photo d'identité / Profil 
         </label>
         
         <div class="mb-3 d-flex justify-content-center">
