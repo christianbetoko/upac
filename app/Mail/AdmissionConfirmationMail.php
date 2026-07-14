@@ -38,15 +38,19 @@ class AdmissionConfirmationMail extends Mailable
 
     // Dans app/Mail/AdmissionConfirmationMail.php :
 public function attachments(): array
-{
-    // Plus besoin de générer le QR Code en PHP ici !
-    $pdf = Pdf::loadView('pdf.admission-card', [
-        'admission' => $this->admission,
-    ])->setPaper('a6', 'portrait');
+    {
+        // Génération du QR Code sous forme de chaîne Base64 pour l'intégrer au PDF
+        $qrcode = base64_encode(\QrCode::format('svg')->size(120)->errorCorrection('H')->generate($this->admission->code));
 
-    return [
-        Attachment::fromData(fn () => $pdf->output(), 'Carte_Admission_UPAC.pdf')
-            ->withMime('application/pdf'),
-    ];
-}
+        // Chargement de la vue HTML de la carte et conversion en PDF
+        $pdf = Pdf::loadView('pdf.admission-card', [
+            'admission' => $this->admission,
+            'qrcode'    => $qrcode
+        ])->setPaper('a6', 'portrait'); // Format poche idéal pour une carte
+
+        return [
+            Attachment::fromData(fn () => $pdf->output(), 'Carte_Admission_UPAC.pdf')
+                ->withMime('application/pdf'),
+        ];
+    }
 }
