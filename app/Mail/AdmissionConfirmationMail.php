@@ -10,6 +10,7 @@ use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Mail\Mailables\Attachment;
 use Illuminate\Queue\SerializesModels;
 use Barryvdh\DomPDF\Facade\Pdf;
+use SimpleSoftwareIO\QrCode\Facades\QrCode; // Importation propre du package QR Code
 
 class AdmissionConfirmationMail extends Mailable
 {
@@ -36,20 +37,27 @@ class AdmissionConfirmationMail extends Mailable
         );
     }
 
-    // Dans app/Mail/AdmissionConfirmationMail.php :
-public function attachments(): array
+    public function attachments(): array
     {
-        // Génération du QR Code sous forme de chaîne Base64 pour l'intégrer au PDF
-        $qrcode = base64_encode(\QrCode::format('svg')->size(120)->errorCorrection('H')->generate($this->admission->code));
+        // 1. Génération du QR Code en PNG Base64 (DomPDF gère beaucoup mieux le PNG que le SVG)
+        $qrcodeData = QrCode::format('png')
+            ->size(120)
+            ->errorCorrection('H')
+            ->generate($this->admission->code);
 
-        // Chargement de la vue HTML de la carte et conversion en PDF
+        $qrcode = base64_encode($qrcodeData);
+
+        // 2. Chargement de la vue du PDF et configuration du format carte
         $pdf = Pdf::loadView('pdf.admission-card', [
             'admission' => $this->admission,
             'qrcode'    => $qrcode
-        ])->setPaper('a6', 'portrait'); // Format poche idéal pour une carte
+        ])->setPaper('a6', 'portrait');
+
+        // 3. Récupération directe du contenu pour éviter les bugs de sérialisation en Queue
+        $pdfContent = $pdf->output();
 
         return [
-            Attachment::fromData(fn () => $pdf->output(), 'Carte_Admission_UPAC.pdf')
+            Attachment::fromData(fn () => $pdfContent, 'Carte_Admission_UPAC.pdf')
                 ->withMime('application/pdf'),
         ];
     }
