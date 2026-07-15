@@ -216,7 +216,7 @@
                     </div>
                     <div class="col-xl-5 col-lg-5">
                         <div class="rs-event-btn d-flex justify-content-lg-end">
-                            <a class="rs-btn has-icon has-bg-primary hover-red" href="blog.html">
+                            <a class="rs-btn has-icon has-bg-primary hover-red" href="{{route('blog')}}">
                                 <span class="btn-text-wrap">
                            <span class="text-default">Voir tous les articles</span>
                                 <span class="text-hover">Voir tous les articles</span>
