@@ -51,7 +51,7 @@
                                         </ul>
                                     </li>
                                        <li class="menu-item-has-children rs-mega-menu">
-                                        <a href="javascript:void(0)">Cursus LMD</a>
+                                        <a href="javascript:void(0)">Formations</a>
                                         <ul class="mega-menu mega-grid">
                                             <li class="rs-menu-item">
                                                 <a href="#" class="title">Faculté des Sciences et Technologies</a>
@@ -89,9 +89,20 @@
                                                     
                                                 </ul>
                                             </li>
+                                            <li class="rs-menu-item">
+                                                <a href="#" class="title">Formations continues</a>
+                                                                                      <ul>
+                                                  <li><a href="#">Séminaires & Ateliers</a></li>
+        <li><a href="#">Certifications </a></li>
+        <li><a href="#">Formations Professionnelles Courtes</a></li>
+        <li><a href="#">Cours de Langues</a></li>  
+                                                   
+                                                    
+                                                </ul>
+                                            </li>
                                         </ul>
                                     </li>
-                                    <li class="menu-item-has-children">
+                          {{--           <li class="menu-item-has-children">
                                         <a href="javascript:void(0)">Formations continues</a>
                                         <ul class="submenu last-children">
                                            
@@ -103,7 +114,7 @@
 
 
                                         </ul>
-                                    </li>   
+                                    </li> --}}   
                                   {{--   <li class="menu-item-has-children rs-mega-menu">
                                         <a href="javascript:void(0)">Campus</a>
                                         <ul class="mega-menu mega-grid">
