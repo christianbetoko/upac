@@ -35,6 +35,18 @@
                                                     
                                                 </ul>
                                             </li>
+                                             <li class="rs-menu-item">
+                                                <a href="#" class="title">Campus</a>
+                                                <ul>
+                                                    <li><a href="#">Bibliothèque (BU)</a></li>
+                <li><a href="#">Salles Informatiques</a></li>
+                <li><a href="#">Restaurant Universitaire</a></li>
+                  <li><a href="#">Associations</a></li>
+               
+                <li><a href="#">Logement</a></li>
+                                                    
+                                                </ul>
+                                            </li>
                                          
                                         </ul>
                                     </li>
@@ -92,7 +104,7 @@
 
                                         </ul>
                                     </li>   
-                                    <li class="menu-item-has-children rs-mega-menu">
+                                  {{--   <li class="menu-item-has-children rs-mega-menu">
                                         <a href="javascript:void(0)">Campus</a>
                                         <ul class="mega-menu mega-grid">
                                             <li class="rs-menu-item">
@@ -117,7 +129,7 @@
                                             </li>
                                          
                                         </ul>
-                                    </li>
+                                    </li> --}}
                                     <!-- blog menu -->
                                    
                                     <!-- contact menu -->
@@ -132,5 +144,7 @@
         <li><a href="#">Retour en images (Médias)</a></li>
                                         </ul>
                                     </li>
-                                   
+                                    <li class="{{ request()->routeIs('contact') ? 'active' : '' }}">
+                                        <a href="{{route('contact')}}">Contact</a>
+                                    </li>
                                 </ul>

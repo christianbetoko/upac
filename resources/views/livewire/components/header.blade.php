@@ -38,9 +38,9 @@
                             <div class="header-nav-menu-item">
                                 <a href="{{ route('faq') }}">Foire aux questions</a>
                             </div>
-                            <div class="header-nav-menu-item">
+                           {{--  <div class="header-nav-menu-item">
                                 <a href="{{ route('contact') }}">Contact</a>
-                            </div>
+                            </div> --}}
  <div class="header-nav-menu-item">
                                 <button class="btn btn-primary">Se connecter</button>
                             </div>
