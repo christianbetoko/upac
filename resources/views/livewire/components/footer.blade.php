@@ -63,8 +63,8 @@
                                     <div class="rs-footer-widget-link has-theme-red">
                                         <ul>
                                             <li><a href="{{route('home')}}">Accueil</a></li>
-                                           
-                                            <li><a href="#">Contact</a></li>
+                                            <li><a href="{{route('faq')}}">Foire aux questions</a></li>
+                                            <li><a href="{{route('contact')}}">Contact</a></li>
                                             
                                         </ul>
                                     </div>

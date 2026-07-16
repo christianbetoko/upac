@@ -36,10 +36,10 @@
                     <div class="header-top-right">
                         <div class="header-top-menu-wrapper">
                             <div class="header-nav-menu-item">
-                                <a href="#">Foire aux questions</a>
+                                <a href="{{ route('faq') }}">Foire aux questions</a>
                             </div>
                             <div class="header-nav-menu-item">
-                                <a href="#">Contact</a>
+                                <a href="{{ route('contact') }}">Contact</a>
                             </div>
  <div class="header-nav-menu-item">
                                 <button class="btn btn-primary">Se connecter</button>

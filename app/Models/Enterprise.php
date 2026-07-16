@@ -19,7 +19,9 @@ class Enterprise extends Model
         'email',
         'logo_with_bg',
         'logo_without_bg',
-       'is_maintenance', // <-- Autoriser le remplissage
+        'longitude',
+        'latitude',
+        'is_maintenance', // <-- Autoriser le remplissage
 ];
 
 protected $casts = [

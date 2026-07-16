@@ -12,7 +12,7 @@ class Post extends Model
         'user_id','sub_category_id', 'title', 'slug',  'content','file_path', 'image_cover', 'status', 'is_featured', 'published_at'
     ];
 
-    protected $casts = ['published_at' => 'datetime', 'status' => 'boolean', 'is_featured' => 'boolean'];
+    protected $casts = ['published_at' => 'datetime', 'is_featured' => 'boolean'];
 
     // Relation avec l'auteur
     public function author() {

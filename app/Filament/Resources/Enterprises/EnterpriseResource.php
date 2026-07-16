@@ -94,6 +94,14 @@ class EnterpriseResource extends Resource
                         ->url()
                         ->maxLength(255)
                         ->columnSpanFull(),
+                         Forms\Components\TextInput::make('longitude')
+                        ->label('Longitude')
+                        ->numeric()
+                        ->maxLength(255),
+                    Forms\Components\TextInput::make('latitude')
+                        ->label('Latitude')
+                        ->numeric()
+                        ->maxLength(255),
                 ])->columns(2),
 
             Section::make('Logos & Identité Visuelle')
