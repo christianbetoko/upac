@@ -27,7 +27,7 @@ class ContactPage extends Component
         
         $this->validate();
         // Enregistrer le message dans la base de données
-     $message=   \App\Models\ContactMessage::create([
+     $message =   \App\Models\ContactMessage::create([
             'first_name' => $this->first_name,
             'last_name' => $this->last_name,
             'email' => $this->email,

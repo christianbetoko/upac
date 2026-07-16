@@ -13,13 +13,13 @@ use App\Models\ContactMessage;
 class MessageToUPACMail extends Mailable
 {
     use Queueable, SerializesModels;
-public $message;
+public $contactMessage;
     /**
      * Create a new message instance.
      */
     public function __construct(ContactMessage $message)
     {
-        $this->message = $message;
+        $this->contactMessage = $message;
     
         //
     }
