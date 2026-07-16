@@ -137,23 +137,39 @@ class AdmissionPage extends Component
         $this->validate();
 
         // 2. Traitement des fichiers (Uploads)
-        $photoPath = $this->photo->store('admissions/photos', 'public');
+        if($this->photo){
+            $photoPath = $this->photo->store('admissions/photos', 'public');
+        } else {
+            $photoPath = null;
+        }
         
         // Fichier école secondaire (optionnel mais recommandé)
-        $schoolFilePath = $this->school_file ? $this->school_file->store('admissions/documents_scolaires', 'public') : null;
-        
-        // Fichier université antérieure (optionnel)
-        $universityFilePath = $this->university_file ? $this->university_file->store('admissions/documents_universitaires', 'public') : null;
-
-        // Fichier pièce d'identité (optionnel)
-        $nationalIdPath = $this->national_id ? $this->national_id->store('admissions/documents_personnels', 'public') : null;
-        
-        // Fichier certificat de naissance (optionnel)
-        $birthCertificatePath = $this->birth_certificate ? $this->birth_certificate->store('admissions/documents_personnels', 'public') : null;
-        
-        // Fichier certificat de bonne conduite (optionnel)
-        $goodConductCertificatePath = $this->good_conduct_certificate ? $this->good_conduct_certificate->store('admissions/documents_personnels', 'public') : null;
-
+        if($this->school_file){
+            $schoolFilePath = $this->school_file->store('admissions/documents_scolaires', 'public');
+        } else {
+            $schoolFilePath = null;
+        }
+        if ($this->university_file){
+            $universityFilePath = $this->university_file->store('admissions/documents_universitaires', 'public');
+        } else {
+            $universityFilePath = null;
+        }
+        if ($this->national_id){
+            $nationalIdPath = $this->national_id->store('admissions/documents_personnels', 'public');
+        } else {
+            $nationalIdPath = null;
+        }
+        if ($this->birth_certificate){
+            $birthCertificatePath = $this->birth_certificate->store('admissions/documents_personnels', 'public');
+        } else {
+            $birthCertificatePath = null;
+        }
+        if ($this->good_conduct_certificate){
+            $goodConductCertificatePath = $this->good_conduct_certificate->store('admissions/documents_personnels', 'public');
+        } else {
+            $goodConductCertificatePath = null;
+        }
+       
 // --- PARSAGE ET REFORMATAGE DE LA DATE POUR MYSQL ---
     try {
         // Convertit 'November 4, 1990' en '1990-11-04'
