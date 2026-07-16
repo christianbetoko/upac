@@ -36,8 +36,8 @@ class ContactPage extends Component
            
         ]);
  $enterprise=Enterprise::first();
-        // Réinitialiser les champs du formulaire
-        $this->reset(['first_name', 'last_name', 'email', 'message', 'terms']);
+        
+      
 // --- ENVOI DE L'EMAIL AVEC LA CARTE PDF EN PIÈCE JOINTE ---
         try {
             \Illuminate\Support\Facades\Mail::to($message->email)->send(new \App\Mail\MessageConfirmationMail($message));
@@ -56,7 +56,8 @@ class ContactPage extends Component
 LivewireAlert::title('Message envoyé !')
         ->success()
         ->show();
-
+        // Réinitialiser les champs du formulaire
+  $this->reset(['first_name', 'last_name', 'email', 'message', 'terms']);
     }
 
     public function render()
