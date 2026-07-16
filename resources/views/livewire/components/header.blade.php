@@ -36,6 +36,9 @@
                     <div class="header-top-right">
                         <div class="header-top-menu-wrapper">
                             <div class="header-nav-menu-item">
+                                <a href="{{ route('admission') }}">Admission</a>
+                            </div>
+                            <div class="header-nav-menu-item">
                                 <a href="{{ route('faq') }}">Foire aux questions</a>
                             </div>
                            {{--  <div class="header-nav-menu-item">
