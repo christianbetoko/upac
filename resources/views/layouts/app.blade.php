@@ -38,6 +38,9 @@
         <meta name="twitter:image" content="{{asset('assets/images/logo.png')}}">
     @endif
 @livewireStyles
+<!-- PWA  -->
+@pwaHead
+
     </head>
     <body class="rs-smoother-yes">
          <!-- preloader start -->
@@ -94,5 +97,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     @livewireScripts
+    @laravelPwa
+@pwaUpdateNotifier
+@pwaInstallButton
     </body>
 </html>
