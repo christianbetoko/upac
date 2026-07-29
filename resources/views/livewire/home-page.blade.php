@@ -286,9 +286,9 @@
                 </div>
             </div>
         </section> 
-        <!-- blog area end -->
- <!-- event area start -->
-       {{--  <section class="rs-event-area section-space rs-event-two rs-swiper">
+<!-- blog area end -->
+          <!-- event area start -->
+        <section class="rs-event-area section-space rs-event-two rs-swiper">
             <div class="container">
                 <div class="row align-items-center g-5 section-title-space">
                     <div class="col-xl-7 col-lg-7">
@@ -413,6 +413,7 @@
                                        09:00 AM - 03:40 PM
                                     </span>
                                             </div>
+        
                                             <h5 class="rs-event-title"><a href="event-details.html">Digital Transformation,
                                                     Technology & Future.</a></h5>
                                             <div class="rs-event-btn">
@@ -457,10 +458,11 @@
                     </div>
                 </div>
             </div>
-        </section> --}}
+        </section>
         <!-- event area end -->
-       
-    </main>
+        
+ 
+ </main>
     <!-- Body main wrapper end -->
 
 </div>

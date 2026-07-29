@@ -82,7 +82,7 @@
     <script src="{{asset('assets/js/vendor/magnific-popup.min.js')}}"></script>
     <script src="{{asset('assets/js/vendor/isotope.pkgd.min.js')}}"></script>
     <script src="{{asset('assets/js/vendor/imagesloaded.pkgd.min.js')}}"></script>
-    <script src="{{asset('assets/js/vendor/ajax-form.js')}}"></script>
+    <script src="{{asset('assets/js/vendor/ajax-form.js')}}"><*/script>
     <script src="{{asset('assets/js/plugins/lenis.min.js')}}"></script>
     <script src="{{asset('assets/js/plugins/gsap.min.js')}}"></script>
     <script src="{{asset('assets/js/plugins/rs-anim-int.js')}}"></script>
