@@ -152,7 +152,19 @@
                                              <li class="{{ request()->routeIs('blog') ? 'active' : '' }}"><a href="{{ route('blog') }}">À la une (Toutes les infos)</a></li>
         <li><a href="#">Communiqués Officiels</a></li>
         <li><a href="#">Agenda & Événements</a></li>
-        <li><a href="#">Retour en images (Médias)</a></li>
+
+                                        </ul>
+                                    </li>
+                                    
+                                     <li class="menu-item-has-children">
+                                        <a href="javascript:void(0)">Médias</a>
+                                        <ul class="submenu last-children">
+                                             <li class=""><a href="#">Galérie Photos</a></li>
+                                             <li class=""><a href="#">Galérie Vidéos</a></li>
+                                             <li class=""><a href="#">Ressources de marque</a></li>
+                                             <li class=""><a href="#">Publications & Revues</a></li>
+                                             <li class=""><a href="#">Podcast / Interviews</a></li>
+       
                                         </ul>
                                     </li>
                                     <li class="{{ request()->routeIs('contact') ? 'active' : '' }}">
