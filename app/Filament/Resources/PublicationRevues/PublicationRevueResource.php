@@ -25,7 +25,7 @@ class PublicationRevueResource extends Resource
 
     protected static string|BackedEnum|null $navigationIcon = 'heroicon-o-book-open';
 
-    
+    protected static ?string $slug = 'publication-revues';
 
     protected static ?string $pluralModelLabel = 'Publications & Revues';
     protected static ?string $modelLabel = 'Publication / Revue';
