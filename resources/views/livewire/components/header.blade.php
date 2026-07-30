@@ -45,7 +45,7 @@
                                 <a href="{{ route('contact') }}">Contact</a>
                             </div> --}}
  <div class="header-nav-menu-item">
-                                <button class="btn btn-primary">Se connecter</button>
+                                <a href="https://ent.upac-rdc.com" class="btn btn-primary">Se connecter</a>
                             </div>
                         </div>
                     </div>

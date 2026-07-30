@@ -12,7 +12,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="template-version" content="1.0.1">
      <title>{{ $title ?? config('app.name') }}</title>
-    <meta name="description" content="">
+    <meta name="description" content="Bienvenue sur le site officiel de l'Université Panafricaine du Congo (U.PA.C). Découvrez nos programmes académiques, nos actualités et nos événements.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Place favicon.ico in the root directory -->
     <link rel="shortcut icon" type="image/x-icon" href="{{asset('assets/images/logo.png')}}">
