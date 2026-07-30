@@ -27,6 +27,7 @@
                                     </span>
                                                 <h1 class="rs-banner-title">{{$slide->name}}
                                                 </h1>
+                                                @if($slide->link)
                                                 <div class="rs-banner-btn">
                                                     <a class="rs-btn has-icon has-theme-red" href="{{$slide->link}}" target="_blank">
                                                         <span class="btn-text-wrap">
@@ -54,6 +55,7 @@
                                           </span>
                                                     </a>
                                                 </div>
+                                                @endif
                                             </div>
                                         </div>
                                     </div>

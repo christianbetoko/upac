@@ -239,35 +239,15 @@
                     </div>
                     <div class="offcanvas-gallery d-none d-xl-block">
                         <div class="offcanvas-gallery-thumb-wrapper">
-                            <div class="offcanvas-popup-thumb">
-                                <a class="popup-image" href="{{asset('assets/images/logo.png')}}">
-                                    <img src="{{asset('assets/images/logo.png')}}"" alt="UPAC">
-                                </a>
-                            </div>
-                            <div class="offcanvas-popup-thumb">
-                                <a class="popup-image" href="assets/images/gallery/gallery-thumb-02.webp">
-                                    <img src="assets/images/gallery/gallery-thumb-02.webp" alt="image">
-                                </a>
-                            </div>
-                            <div class="offcanvas-popup-thumb">
-                                <a class="popup-image" href="assets/images/gallery/gallery-thumb-03.webp">
-                                    <img src="assets/images/gallery/gallery-thumb-03.webp" alt="image">
-                                </a>
-                            </div>
-                            <div class="offcanvas-popup-thumb">
-                                <a class="popup-image" href="assets/images/gallery/gallery-thumb-04.webp">
-                                    <img src="assets/images/gallery/gallery-thumb-04.webp" alt="image">
-                                </a>
-                            </div>
-                            <div class="offcanvas-popup-thumb">
-                                <a class="popup-image" href="assets/images/gallery/gallery-thumb-05.webp">
-                                    <img src="assets/images/gallery/gallery-thumb-05.webp" alt="image">
-                                </a>
-                            </div>
-                            <div class="offcanvas-popup-thumb">
-                                <a class="popup-image" href="assets/images/gallery/gallery-thumb-06.webp">
-                                    <img src="assets/images/gallery/gallery-thumb-06.webp" alt="image">
-                                </a>
+                            @foreach ($campusLifePhotos as $photo)
+                                <div class="offcanvas-popup-thumb">
+                                    <a class="popup-image" href="{{ asset('storage/' . $photo->image) }}">
+                                        <img src="{{ asset('storage/' . $photo->image) }}" alt="{{ $photo->title }}">
+                                    </a>
+                                </div>
+                            @endforeach
+                           
+                            
                             </div>
                         </div>
                     </div>
