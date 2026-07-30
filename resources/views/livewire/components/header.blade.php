@@ -241,8 +241,8 @@
                         <div class="offcanvas-gallery-thumb-wrapper">
                             @foreach ($campusLifePhotos as $photo)
                                 <div class="offcanvas-popup-thumb">
-                                    <a class="popup-image" href="{{ asset('storage/' . $photo->image) }}">
-                                        <img src="{{ asset('storage/' . $photo->image) }}" alt="{{ $photo->title }}">
+                                    <a class="popup-image" href="{{ asset('storage/' . $photo->image_path) }}">
+                                        <img src="{{ asset('storage/' . $photo->image_path) }}" alt="{{ $photo->title }}">
                                     </a>
                                 </div>
                             @endforeach
