@@ -151,48 +151,7 @@
         <!-- feature area end -->
 
         
- <!-- campus life area start -->
-        <section class="rs-campus-life-area  rs-campus-life-two">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="rs-campus-life-sec-wrapper">
-                            <h2 class="section-title rs-split-text-enable split-in-left">Vie au Campus UPAC
-                            </h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="rs-campus-life-wrapper">
-               <div class="rs-campus-life-thumb-large">
-    <div class="swiper item-details-active">
-        <div class="swiper-wrapper">
-            @foreach($campusLifePhotos as $photo)
-                <div class="swiper-slide">
-                    <div class="rs-campus-life-bg-thumb include-bg" data-background="{{ asset('storage/' . $photo->image_path) }}">
-                    </div>
-                </div>
-            @endforeach
-        </div>
-    </div>
-</div>
 
-<div class="rs-campus-life-thumb-small">
-    <div class="swiper item-details-nav">
-        <div class="swiper-wrapper">
-            @foreach($campusLifePhotos as $photo)
-                <div class="swiper-slide">
-                    <button class="custom-button">
-                        <img src="{{ asset('storage/' . $photo->image_path) }}" alt="{{ $photo->title }}">
-                    </button>
-                </div>
-            @endforeach
-        </div>
-    </div>
-</div>
-            </div>
-        </section>
-        <!-- campus life area end -->
           <!-- blog area start -->
          <section class="rs-blog-area section-space rs-blog-one has-bg-primary">
             <div class="container">
@@ -286,6 +245,48 @@
                 </div>
             </div>
         </section> 
+         <!-- campus life area start -->
+        <section class="rs-campus-life-area  rs-campus-life-two">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="rs-campus-life-sec-wrapper">
+                            <h2 class="section-title rs-split-text-enable split-in-left">Vie au Campus UPAC
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rs-campus-life-wrapper">
+               <div class="rs-campus-life-thumb-large">
+    <div class="swiper item-details-active">
+        <div class="swiper-wrapper">
+            @foreach($campusLifePhotos as $photo)
+                <div class="swiper-slide">
+                    <div class="rs-campus-life-bg-thumb include-bg" data-background="{{ asset('storage/' . $photo->image_path) }}">
+                    </div>
+                </div>
+            @endforeach
+        </div>
+    </div>
+</div>
+
+<div class="rs-campus-life-thumb-small">
+    <div class="swiper item-details-nav">
+        <div class="swiper-wrapper">
+            @foreach($campusLifePhotos as $photo)
+                <div class="swiper-slide">
+                    <button class="custom-button">
+                        <img src="{{ asset('storage/' . $photo->image_path) }}" alt="{{ $photo->title }}">
+                    </button>
+                </div>
+            @endforeach
+        </div>
+    </div>
+</div>
+            </div>
+        </section>
+        <!-- campus life area end -->
 <!-- blog area end -->
           <!-- event area start -->
         {{-- <section class="rs-event-area section-space rs-event-two rs-swiper">
