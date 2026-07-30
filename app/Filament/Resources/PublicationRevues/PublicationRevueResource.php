@@ -78,6 +78,7 @@ class PublicationRevueResource extends Resource
                     Forms\Components\FileUpload::make('image')
                         ->label('Image de couverture')
                         ->image()
+                             ->imageEditor()
                         ->disk('public')
                         ->directory('publications/covers')
                         ->required()
