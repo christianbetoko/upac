@@ -5,7 +5,7 @@ namespace App\Filament\Resources\PublicationRevues;
 use App\Filament\Resources\PublicationRevues\Pages\CreatePublicationRevue;
 use App\Filament\Resources\PublicationRevues\Pages\EditPublicationRevue;
 use App\Filament\Resources\PublicationRevues\Pages\ListPublicationRevues;
-use App\Filament\Resources\PublicationRevues\Pages\ViewPublicationRevue;
+
 use App\Models\PublicationRevue;
 use BackedEnum;
 use Filament\Forms;
