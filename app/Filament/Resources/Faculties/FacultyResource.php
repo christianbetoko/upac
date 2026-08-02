@@ -17,7 +17,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Models\Faculty;
 use Illuminate\Support\Str;
-
+use UnitEnum;
 class FacultyResource extends Resource
 {
     protected static ?string $model = Faculty::class;
@@ -26,7 +26,7 @@ class FacultyResource extends Resource
     
     protected static ?string $pluralModelLabel = 'Facultés';
     protected static ?string $modelLabel = 'Faculté';
-
+  protected static string | UnitEnum | null $navigationGroup = 'Informations & Paramètres du Site';
     public static function form(Schema $schema): Schema
     {
         return $schema->components([

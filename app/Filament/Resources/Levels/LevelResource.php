@@ -17,7 +17,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Models\Level;
 use Illuminate\Support\Str;
-
+use UnitEnum;
 class LevelResource extends Resource
 {
     protected static ?string $model = Level::class;
@@ -26,7 +26,7 @@ class LevelResource extends Resource
     
     protected static ?string $pluralModelLabel = 'Niveaux d\'études';
     protected static ?string $modelLabel = 'Niveau d\'études';
-
+  protected static string | UnitEnum | null $navigationGroup = 'Informations & Paramètres du Site';
     public static function form(Schema $schema): Schema
     {
         return $schema->components([

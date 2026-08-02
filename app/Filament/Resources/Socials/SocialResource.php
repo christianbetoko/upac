@@ -32,7 +32,7 @@ class SocialResource extends Resource
     
     protected static ?string $pluralModelLabel = 'Réseaux Sociaux';
     protected static ?string $modelLabel = 'Réseau Social';
-
+     protected static string | UnitEnum | null $navigationGroup = 'Informations & Paramètres du Site';
     public static function form(Schema $schema): Schema
     {
         return $schema->components([

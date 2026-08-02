@@ -28,7 +28,7 @@ class EnterpriseResource extends Resource
 
     protected static string|BackedEnum|null $navigationIcon = 'heroicon-o-building-office';
   
-    protected static string | UnitEnum | null $navigationGroup = 'Gestion du Site';
+    protected static string | UnitEnum | null $navigationGroup = 'Informations & Paramètres du Site';
     
     protected static ?string $pluralModelLabel = 'Informations Entreprise';
     protected static ?string $modelLabel = 'Entreprise';

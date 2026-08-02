@@ -35,7 +35,7 @@ class CategoryResource extends Resource
     
     protected static ?string $pluralModelLabel = 'Catégories';
     protected static ?string $modelLabel = 'Catégorie';
-
+  protected static string | UnitEnum | null $navigationGroup = 'Gestion du blog & des contenus';
     public static function form(Schema $schema): Schema
     {
         return $schema->components([

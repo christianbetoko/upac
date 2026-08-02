@@ -19,7 +19,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Models\Post;
 use Illuminate\Support\Str;
-
+use UnitEnum;
 class PostResource extends Resource
 {
     protected static ?string $model = Post::class;
@@ -28,7 +28,7 @@ class PostResource extends Resource
     
     protected static ?string $pluralModelLabel = 'Articles';
     protected static ?string $modelLabel = 'Article';
-
+  protected static string | UnitEnum | null $navigationGroup = 'Gestion du blog & des contenus';
     public static function form(Schema $schema): Schema
     {
         return $schema->components([

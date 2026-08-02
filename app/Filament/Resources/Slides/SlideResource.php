@@ -9,7 +9,7 @@ use Filament\Forms\Form;
 use Filament\Schemas\Components\Section;
 use Filament\Tables;
 
-
+use UnitEnum;
 
 use App\Filament\Resources\Slides\Pages\CreateSlide;
 use App\Filament\Resources\Slides\Pages\EditSlide;
@@ -17,7 +17,7 @@ use App\Filament\Resources\Slides\Pages\ListSlides;
 use App\Filament\Resources\Slides\Schemas\SlideForm;
 use App\Filament\Resources\Slides\Tables\SlidesTable;
 use BackedEnum;
-use UnitEnum;
+
 use Filament\Resources\Resource;
 use Filament\Schemas\Schema;
 use Filament\Support\Icons\Heroicon;
@@ -32,7 +32,7 @@ class SlideResource extends Resource
 
     protected static string|BackedEnum|null $navigationIcon = 'heroicon-o-photo';
   
-    
+      protected static string | UnitEnum | null $navigationGroup = 'Gestion du blog & des contenus';
     
 /*     protected static string | UnitEnum | null $navigationGroup = 'Gestion du Site'; */
     

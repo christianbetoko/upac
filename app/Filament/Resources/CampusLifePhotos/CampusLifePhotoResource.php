@@ -8,12 +8,12 @@ use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Schemas\Components\Section;
 use Filament\Tables;
-
+use UnitEnum;
 use App\Filament\Resources\CampusLifePhotos\Pages\CreateCampusLifePhoto;
 use App\Filament\Resources\CampusLifePhotos\Pages\EditCampusLifePhoto;
 use App\Filament\Resources\CampusLifePhotos\Pages\ListCampusLifePhotos;
 use BackedEnum;
-use UnitEnum;
+
 use Filament\Resources\Resource;
 use Filament\Schemas\Schema;
 use Filament\Support\Icons\Heroicon;
@@ -25,10 +25,10 @@ use App\Models\CampusLifePhoto;
 class CampusLifePhotoResource extends Resource
 {
     protected static ?string $model = CampusLifePhoto::class;
-
+  protected static string | UnitEnum | null $navigationGroup = 'Gestion du blog & des contenus';
     protected static string|BackedEnum|null $navigationIcon = 'heroicon-o-camera';
   
-    protected static string | UnitEnum | null $navigationGroup = 'Gestion du Site';
+ 
     
     protected static ?string $pluralModelLabel = 'Photos Vie du Campus';
     protected static ?string $modelLabel = 'Photo Campus';

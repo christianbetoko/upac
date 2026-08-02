@@ -19,7 +19,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Models\SubCategory;
 use Illuminate\Support\Str;
-
+use UnitEnum;
 class SubCategoryResource extends Resource
 {
     protected static ?string $model = SubCategory::class;
@@ -28,7 +28,7 @@ class SubCategoryResource extends Resource
     
     protected static ?string $pluralModelLabel = 'Sous-catégories';
     protected static ?string $modelLabel = 'Sous-catégorie';
-
+  protected static string | UnitEnum | null $navigationGroup = 'Gestion du blog & des contenus';
     public static function form(Schema $schema): Schema
     {
         return $schema->components([

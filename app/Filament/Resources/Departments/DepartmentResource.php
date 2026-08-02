@@ -17,7 +17,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Models\Department;
 use Illuminate\Support\Str;
-
+use UnitEnum;
 class DepartmentResource extends Resource
 {
     protected static ?string $model = Department::class;
@@ -26,7 +26,7 @@ class DepartmentResource extends Resource
     
     protected static ?string $pluralModelLabel = 'Départements';
     protected static ?string $modelLabel = 'Département';
-
+  protected static string | UnitEnum | null $navigationGroup = 'Informations & Paramètres du Site';
     public static function form(Schema $schema): Schema
     {
         return $schema->components([
