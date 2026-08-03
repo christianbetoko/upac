@@ -54,7 +54,7 @@
                                         <a href="javascript:void(0)">Formations</a>
                                         <ul class="mega-menu mega-grid">
                                             <li class="rs-menu-item">
-                                                <a href="#" class="title">Nos Filières</a>
+                                                <a href="#" class="title">Cursus LMD</a>
                                                 <ul>
                                                     <li><a href="#">Génie Informatique & IA</a></li>
                                                     <li><a href="#">Architecture</a></li>
