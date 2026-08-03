@@ -78,7 +78,7 @@ class PublicationResource extends Resource
                         ->required(),
 
                     Forms\Components\FileUpload::make('file')
-                        ->label('Fichier joint / Document (Optionnel)')
+                        ->label('Fichier de la publication / revue')
                         ->disk('public')
                         ->directory('publications/files')
                         ->acceptedFileTypes(['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'])
