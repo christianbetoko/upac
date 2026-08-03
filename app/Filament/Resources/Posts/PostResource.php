@@ -152,7 +152,7 @@ class PostResource extends Resource
             ->filters([
                 Tables\Filters\SelectFilter::make('sub_category_id')
                     ->label('Sous-catégorie')
-                    ->relationship('subCategory', 'name')
+                    ->relationship('subCategory', 'name') 
                     ->searchable()
                     ->preload(),
 

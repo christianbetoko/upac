@@ -54,41 +54,20 @@
                                         <a href="javascript:void(0)">Formations</a>
                                         <ul class="mega-menu mega-grid">
                                             <li class="rs-menu-item">
-                                                <a href="#" class="title">Faculté des Sciences et Technologies</a>
+                                                <a href="#" class="title">Nos Filières</a>
                                                 <ul>
-                                                    <li><a href="#">Département de Génie Informatique</a></li>
-                                                    <li><a href="#">Département de Génie Civil & Architecture</a></li>
-                                                    
+                                                    <li><a href="#">Génie Informatique et IA</a></li>
+                                                    <li><a href="#">Architecture</a></li>
+                                                        <li><a href="#">Economie</a></li>
+                                                            <li><a href="#">Droit</a></li>
+                                                                <li><a href="#">Relations Internationales</a></li>
+                                                                    <li><a href="#">Communication</a></li>
+                                                                        <li><a href="#">Sciences de santé</a></li>
+                                                                            <li><a href="#">Médecine</a></li>
 
                                                 </ul>
                                             </li>
-                                            <li class="rs-menu-item">
-                                                <a href="#" class="title">Faculté des Sciences Humaines</a>
-                                                <ul>
-                                                    <li><a href="#">Département de Droit</a></li>
-                                                    <li><a href="#">Département d'Économie & Gestion</a></li>
-                                                    
-                                                    
-                                                </ul>
-                                            </li>
-                                            <li class="rs-menu-item">
-                                                <a href="#" class="title">Faculté des Sciences de la Santé</a>
-                                                <ul>
-                                                    <li><a href="#">Sciences Infirmières </a></li>
-                                                    <li><a href="#">Technique de Laboratoire de Prothèse Dentaire </a></li>
-                                                    <li><a href="#">Santé Communautaire </a></li>
-                                                   
-                                                    
-                                                </ul>
-                                            </li>
-                                         <li class="rs-menu-item">
-                                                <a href="#" class="title">Faculté des SCiences de l'Information et de la Communication</a>
-                                                <ul>
-                                                    
-                                                   
-                                                    
-                                                </ul>
-                                            </li>
+                                           
                                             <li class="rs-menu-item">
                                                 <a href="#" class="title">Formations continues</a>
                                                                                       <ul>
