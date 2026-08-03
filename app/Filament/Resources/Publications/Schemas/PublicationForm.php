@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Filament\Resources\PublicationRevues\Schemas;
+namespace App\Filament\Resources\Publications\Schemas;
 
 use Filament\Schemas\Schema;
 
-class PublicationRevueForm
+class PublicationForm
 {
     public static function configure(Schema $schema): Schema
     {

@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Filament\Resources\PublicationRevues;
+namespace App\Filament\Resources\Publications;
 
-use App\Filament\Resources\PublicationRevues\Pages\CreatePublicationRevue;
-use App\Filament\Resources\PublicationRevues\Pages\EditPublicationRevue;
-use App\Filament\Resources\PublicationRevues\Pages\ListPublicationRevues;
-use App\Filament\Resources\PublicationRevues\Schemas\PublicationRevueForm;
-use App\Filament\Resources\PublicationRevues\Tables\PublicationRevuesTable;
-use App\Models\PublicationRevue;
+use App\Filament\Resources\Publications\Pages\CreatePublication;
+use App\Filament\Resources\Publications\Pages\EditPublication;
+use App\Filament\Resources\Publications\Pages\ListPublications;
+use App\Filament\Resources\Publications\Schemas\PublicationForm;
+use App\Filament\Resources\Publications\Tables\PublicationsTable;
+use App\Models\Publication;
 use BackedEnum;
 use Filament\Forms;
 use Filament\Forms\Form;
@@ -22,15 +22,16 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Models\Post;
 use Illuminate\Support\Str;
 use UnitEnum;
-class PublicationRevueResource extends Resource
+class PublicationResource extends Resource
 {
-    protected static ?string $model = PublicationRevue::class;
+    protected static ?string $model = Publication::class;
 
 
     protected static string|BackedEnum|null $navigationIcon = 'heroicon-o-document-text';
     
     protected static ?string $pluralModelLabel = 'Publications';
     protected static ?string $modelLabel = 'Publication';
+    
 
   protected static string | UnitEnum | null $navigationGroup = 'Gestion du blog & des contenus';
     public static function form(Schema $schema): Schema
@@ -117,9 +118,9 @@ Forms\Components\DatePicker::make('publication_date')
     public static function getPages(): array
     {
         return [
-            'index' => ListPublicationRevues::route('/'),
-            'create' => CreatePublicationRevue::route('/create'),
-            'edit' => EditPublicationRevue::route('/{record}/edit'),
+            'index' => ListPublications::route('/'),
+            'create' => CreatePublication::route('/create'),
+            'edit' => EditPublication::route('/{record}/edit'),
         ];
     }
 }
