@@ -105,7 +105,7 @@ Forms\Components\DatePicker::make('publication_date')
 
     public static function table(Table $table): Table
     {
-        return PublicationRevuesTable::configure($table);
+        return PublicationsTable::configure($table);
     }
 
     public static function getRelations(): array
