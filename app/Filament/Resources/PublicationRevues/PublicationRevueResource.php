@@ -29,8 +29,8 @@ class PublicationRevueResource extends Resource
 
     protected static string|BackedEnum|null $navigationIcon = 'heroicon-o-document-text';
     
-    protected static ?string $pluralModelLabel = 'Publications & Revues';
-    protected static ?string $modelLabel = 'Publication & Revue';
+    protected static ?string $pluralModelLabel = 'Publications';
+    protected static ?string $modelLabel = 'Publication';
 
   protected static string | UnitEnum | null $navigationGroup = 'Gestion du blog & des contenus';
     public static function form(Schema $schema): Schema
