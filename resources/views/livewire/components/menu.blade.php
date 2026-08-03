@@ -56,7 +56,7 @@
                                             <li class="rs-menu-item">
                                                 <a href="#" class="title">Nos Filières</a>
                                                 <ul>
-                                                    <li><a href="#">Génie Informatique et IA</a></li>
+                                                    <li><a href="#">Génie Informatique & IA</a></li>
                                                     <li><a href="#">Architecture</a></li>
                                                         <li><a href="#">Economie</a></li>
                                                             <li><a href="#">Droit</a></li>
