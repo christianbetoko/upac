@@ -14,12 +14,13 @@ use Livewire\Attributes\Title;
 use Livewire\Component;
 use Livewire\Attributes\Validate;
 use Jantinnerezo\LivewireAlert\Facades\LivewireAlert;
-
+use App\Services\FlexPayService;
 #[Title('Admission - U.PA.C')]
 class AdmissionPage extends Component
 {
     use WithFileUploads;
-
+public $payment_method = 'mobile_money'; // 'mobile_money' ou 'card'
+public $payment_amount = 50; // Définissez le montant requis
     // 1. Informations Personnelles & Photo
     #[Validate('nullable|image|max:10240')] 
     public $photo;
@@ -115,7 +116,7 @@ class AdmissionPage extends Component
     /**
      * Traitement de la soumission du formulaire
      */
-    public function envoyer()
+    public function envoyer(FlexPayService $flexPayService)
     {
          function generateRandomCodeWithUPAC($length = 10) {
             $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -216,6 +217,8 @@ class AdmissionPage extends Component
             'good_conduct_certificate' => $goodConductCertificatePath,
             // Suivi
             'status'                => 'pending',
+            'payment_status'        => 'pending', // Valeur par défaut
+            'order_number'          => null, // Valeur par défaut
 
             // Autres documents
 
@@ -232,6 +235,46 @@ class AdmissionPage extends Component
         LivewireAlert::title('Votre dossier d\'admission a été enregistré avec succès !')
         ->success()
         ->show();
+        if ($this->payment_method === 'mobile_money') {
+        $response = $flexPayService->payMobileMoney(
+            $this->phone,
+            $this->payment_amount,
+            $admission->code,
+            'USD'
+        );
+
+        if (isset($response['code']) && $response['code'] == '0') {
+            $admission->update(['order_number' => $response['orderNumber']]);
+            
+            LivewireAlert::title('Demande de paiement envoyée ! Veuillez valider le message push sur votre téléphone.')
+                ->success()
+                ->show();
+        } else {
+            LivewireAlert::title('Échec de la demande de paiement Mobile Money.')
+                ->error()
+                ->show();
+            return;
+        }
+    } elseif ($this->payment_method === 'card') {
+        $response = $flexPayService->payCard(
+            $this->payment_amount,
+            $admission->code,
+            'USD',
+            'Frais d admission - ' . $admission->code
+        );
+
+        if (isset($response['code']) && $response['code'] == '0' && !empty($response['url'])) {
+            $admission->update(['order_number' => $response['orderNumber']]);
+            
+            // Redirection vers le guichet de paiement par carte
+            return redirect()->away($response['url']);
+        } else {
+            LivewireAlert::title('Échec de la génération de l\'URL de paiement par carte.')
+                ->error()
+                ->show();
+            return;
+        }
+    }
        // session()->flash('success', 'Votre dossier d\'admission complet a été enregistré avec succès !');
 
         // 5. Réinitialisation complète du formulaire

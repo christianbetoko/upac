@@ -37,7 +37,11 @@ class Admission extends Model
         'birth_certificate',
         'good_conduct_certificate',
 
-        'status'
+        'status',
+        'payment_status', // <--- Ajouter ici
+    'order_number',   // <--- Ajouter ici
+
+        
     ];
 
     public function department(){

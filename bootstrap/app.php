@@ -12,7 +12,11 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware): void {
-        //
+        // Exclure la route de callback FlexPay du contrôle CSRF
+        $middleware->validateCsrfTokens(except: [
+            'flexpay/callback',
+            // Ou avec un joker si besoin : 'flexpay/*'
+        ]);
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         $exceptions->shouldRenderJsonWhen(

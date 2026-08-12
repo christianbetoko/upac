@@ -440,7 +440,24 @@
     </div>
      </div>
     
-    
+    <h5 class="form-title rs-split-text-enable split-in-left mt-20 mb-20">
+    Mode de paiement
+</h5>
+
+<div class="row mb-4">
+    <div class="col-md-6 mb-3">
+        <label class="form-check-label d-flex align-items-center border p-3 rounded cursor-pointer">
+            <input type="radio" wire:model.live="payment_method" value="mobile_money" class="form-check-input me-2">
+            <span><strong>Mobile Money</strong> (M-Pesa, Orange Money, Airtel Money, Africell)</span>
+        </label>
+    </div>
+    <div class="col-md-6 mb-3">
+        <label class="form-check-label d-flex align-items-center border p-3 rounded cursor-pointer">
+            <input type="radio" wire:model.live="payment_method" value="card" class="form-check-input me-2">
+            <span><strong>Carte Bancaire</strong> (Visa / Mastercard)</span>
+        </label>
+    </div>
+</div>
 
     <div class="rs-contact-btn">
         <button type="submit" wire:loading.attr="disabled" class="rs-btn hover-yellow radius-6 w-100">
