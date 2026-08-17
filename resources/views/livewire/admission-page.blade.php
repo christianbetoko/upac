@@ -440,7 +440,7 @@
     </div>
      </div>
     
-    <h5 class="form-title rs-split-text-enable split-in-left mt-20 mb-20">
+    <!-- <h5 class="form-title rs-split-text-enable split-in-left mt-20 mb-20">
     Mode de paiement
 </h5>
 
@@ -458,7 +458,7 @@
             <span><strong>Carte Bancaire</strong> (Visa / Mastercard)</span>
         </label>
     </div>
-</div>
+</div> -->
 
     <div class="rs-contact-btn">
         <button type="submit" wire:loading.attr="disabled" class="rs-btn hover-yellow radius-6 w-100">
