@@ -444,7 +444,8 @@
     Mode de paiement
 </h5>
 
-<!-- <div class="row mb-4">
+
+<div class="row mb-4">
     <div class="col-md-6 mb-3">
         <label class="form-check-label d-flex align-items-center border p-3 rounded cursor-pointer">
             <input type="radio" wire:model.live="payment_method" value="mobile_money" class="form-check-input me-2">
@@ -457,7 +458,7 @@
             <span><strong>Carte Bancaire</strong> (Visa / Mastercard)</span>
         </label>
     </div>
-</div> -->
+</div>
 
     <div class="rs-contact-btn">
         <button type="submit" wire:loading.attr="disabled" class="rs-btn hover-yellow radius-6 w-100">

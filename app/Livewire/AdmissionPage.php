@@ -235,7 +235,7 @@ public $payment_amount = 50; // Définissez le montant requis
         LivewireAlert::title('Votre dossier d\'admission a été enregistré avec succès !')
         ->success()
         ->show();
-      /*   if ($this->payment_method === 'mobile_money') {
+        if ($this->payment_method === 'mobile_money') {
         $response = $flexPayService->payMobileMoney(
             $this->phone,
             $this->payment_amount,
@@ -273,8 +273,8 @@ public $payment_amount = 50; // Définissez le montant requis
                 ->error()
                 ->show();
             return;
-        } */
-  //  }
+        }
+    }
        // session()->flash('success', 'Votre dossier d\'admission complet a été enregistré avec succès !');
 
         // 5. Réinitialisation complète du formulaire
