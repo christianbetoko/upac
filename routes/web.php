@@ -25,3 +25,4 @@ Route::post('/flexpay/callback', [FlexPayController::class, 'handleCallback'])->
 Route::get('/flexpay/approve', [FlexPayController::class, 'approve'])->name('flexpay.approve');
 Route::get('/flexpay/cancel', [FlexPayController::class, 'cancel'])->name('flexpay.cancel');
 Route::get('/flexpay/decline', [FlexPayController::class, 'decline'])->name('flexpay.decline');
+Route::redirect('/evaluation-jour1', 'https://docs.google.com/forms/d/e/1FAIpQLSf2Vblhd6p9rC2_BVKkaOs7BiGWjr_i2YqsDE5Bsx2po1T4Eg/viewform?usp=sharing&ouid=102458774941756093843', 301);
