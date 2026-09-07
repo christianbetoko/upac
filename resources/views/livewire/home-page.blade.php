@@ -132,7 +132,7 @@
         <div class="rs-feature-area rs-feature-two">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-xl-4">
+                    <div class="col-xl-10">
                         <div class="rs-feature-wrapper ">
                             <div class="rs-feature-item">
                                 
@@ -147,7 +147,7 @@
                             </div>
                         </div>
                     </div>
-                      <div class="col-xl-4">
+                      <div class="col-xl-10">
                         <div class="rs-feature-wrapper ">
                             <div class="rs-feature-item">
                                 
