@@ -142,31 +142,16 @@
                                     Admission et inscription
                                 </a>
                             </div>
-                           <div class="rs-feature-item">
-                               
-                            </div>
-                        </div>
-                    </div>
-                   
-                </div>
-                <div class="row">
-                    
-                      <div class="col-xl-12">
-                        <div class="rs-feature-wrapper ">
-                            <div class="rs-feature-item">
-                                
-                            </div>
                             <div class="rs-feature-item">
                                 <a href="{{ route('evaluation-jour1') }}" >
                                     Evaluation Jour 1
                                 </a>
                             </div>
-                           <div class="rs-feature-item">
-                               
-                            </div>
                         </div>
                     </div>
+                   
                 </div>
+               
             </div>
         </div>
         <!-- feature area end -->
