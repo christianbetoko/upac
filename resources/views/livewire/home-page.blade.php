@@ -144,8 +144,8 @@
                             </div>
                            
                             <div class="rs-feature-item">
-                                <a href="{{ route('evaluation-jour2') }}" >
-                                    Evaluation Jour 2
+                                <a href="{{ route('evaluation-jour3') }}" >
+                                    Evaluation Jour 3
                                 </a>
                             </div>
                         </div>

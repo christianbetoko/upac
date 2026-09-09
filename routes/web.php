@@ -27,3 +27,4 @@ Route::get('/flexpay/cancel', [FlexPayController::class, 'cancel'])->name('flexp
 Route::get('/flexpay/decline', [FlexPayController::class, 'decline'])->name('flexpay.decline');
 Route::redirect('/evaluation-jour1', 'https://docs.google.com/forms/d/e/1FAIpQLSf2Vblhd6p9rC2_BVKkaOs7BiGWjr_i2YqsDE5Bsx2po1T4Eg/viewform?usp=sharing&ouid=102458774941756093843', 301)->name('evaluation-jour1');
 Route::redirect('/evaluation-jour2', 'https://docs.google.com/forms/d/e/1FAIpQLSfKYPL_VbQgtcuqlpZzT6ORHpToiBpIw5TAJcPkEwpv5HLbCQ/viewform?usp=sharing&ouid=102458774941756093843', 301)->name('evaluation-jour2');
+Route::redirect('/evaluation-jour3', 'https://docs.google.com/forms/d/e/1FAIpQLSezjHreAu-n2mmEh7Rll9F9GLhHW8PgOV8PjE7MdGV7195TUA/viewform?usp=sharing&ouid=102458774941756093843', 301)->name('evaluation-jour3');
