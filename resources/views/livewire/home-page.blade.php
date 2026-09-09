@@ -134,15 +134,18 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="rs-feature-wrapper ">
-                            <div class="rs-feature-item">
-                                
-                            </div>
+                          
                             <div class="rs-feature-item">
                                 <a href="{{ route('admission') }}" >
                                     Admission et inscription
                                 </a>
                             </div>
                            
+                            <div class="rs-feature-item">
+                                <a href="{{ route('evaluation-jour2') }}" >
+                                    Evaluation Jour 2
+                                </a>
+                            </div>
                             <div class="rs-feature-item">
                                 <a href="{{ route('evaluation-jour3') }}" >
                                     Evaluation Jour 3
